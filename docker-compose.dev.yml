@@ -1,9 +1,9 @@
 services:
   nginx:
     build: .
-    container_name: nginx-test
+    container_name: nginx-test-dev
     volumes:
-      - ./nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
     ports:
       - "80:80"
     restart: always
